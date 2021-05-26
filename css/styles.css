@@ -372,6 +372,8 @@ footer {
 #about {
     padding: 75px 15px;
     background: rgb(14, 25, 27);
+    /*background: url(../images/about\ me.jpg);*/
+    /*background-color: #82411b;*/
     /* border-bottom: 1px solid #faf9f9 */
 }
 
@@ -395,6 +397,7 @@ footer {
     padding: 50px 15px;
     text-align: center;
     background: rgb(14, 25, 27);
+    /*background: url(../images/workdark.jpg);*/
     /* border-bottom: 1px solid #dcd9d9 */
 }
 
