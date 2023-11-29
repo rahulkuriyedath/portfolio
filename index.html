@@ -78,7 +78,7 @@
                     <h2 class="heading">About Me</h2>
                 </div>
                 <div class="col-md-8">
-                    <p>
+                    <!-- <p>
                         Hi there! I am a data scientist with a strong software engineering background and a 
                         demonstrated history of working in the tech startups as well as the IT consulting industry. <br><br>
                         I have a master's degree in Data Science from University of 
@@ -87,6 +87,17 @@
                         creatively implement machine learning based algorithms and data science techniques 
                         to solve real world problems. <br><br>Apart from data science, I spend a lot of time playing 
                         guitar and singing, travelling, takings photos or just hanging out with friends.
+                    </p> -->
+                    <p>
+                        Hi there! I'm a data scientist with 3.5+ years of work experience in consulting 
+                        & early stage start-ups and a master’s in Data Science from the University of British Columbia.<br><br>
+                        I have deep expertise with developing end-to-end data science and machine learning products, 
+                        having worked on upstream tasks such as data acquisition, data cleaning and transformation, 
+                        building ETL data pipelines and machine learning models, as well as deploying them to 
+                        cloud-based production environments. <br><br>
+                        I'm always looking for opportunities to utilize my unique blend of software engineering, data science as well 
+                        consulting experience to build products that can solve complex business problems. <br><br>
+                        You can find some of the cool projects that I'm working on below!
                     </p>
                 </div>
             </div>
@@ -103,22 +114,19 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Professional Experience</h2>
         <div id="experience-timeline">
-            <div data-date="June 2022 – Present">
+            <div data-date="June 2022 – July 2023">
                 <h3>Ample Insight Inc.</h3>
                 <h4>Data Scientist</h4>
                 <p>
                     <ul>
                         <li>
-                            Working as a data science consultant at Ample Insight, a leading Toronto based consulting firm providing services in AI and data science.
+                            Worked as a data science consultant at Ample Insight, a leading Toronto based consulting firm providing services in AI and data science.
                         </li>
                         <li>
-                            Led the re-building of a tech client’s data infrastructure helping them build scalable Python-based ETL pipelines orchestrated on Airflow, greatly improving data traceability, pipeline transparency and data quality.
+                            Led the re-building of a tech client’s data infrastructure and built scalable Python-based ETL pipelines orchestrated on Airflow, greatly improving data traceability, pipeline transparency and data quality. Also mentored and trained client in-house data engineering team on best practices related to ETL and analytics.
                         </li>
                         <li>
-                            Helped mentor and train client in-house data engineering team on best practices related to ETL and analytics.
-                        </li>
-                        <li>
-                            Led the development of an inhouse analytics and data quality tool, helping with product, tech and data schema designs as well as deployment to AWS. Tools used include Python, SQL, AWS (RDS, DynamoDB, Glue, S3, etc.) and bash scripts.
+                            Led the development of an inhouse analytics and data quality tool, helping with product, tech and data schema designs as well as deployment to AWS. Built auto ML algorithms that allowed automated discovery of data anomalies and automated detection of PII data across enterprise-wide data stores. Tools used include Python (pandas, pyspark), SQL, AWS (RDS, DynamoDB, Glue, S3, etc.) and bash scripts. Link: https://www.ampleinsight.com/atlas
                         </li>
                     </ul>
                 </p>
@@ -220,9 +228,66 @@ Web Services (AWS). Services used include EC2, ECS, DynamoDB, Fargate, OpenSearc
     <!-- End #education -->
 
     <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading">Personal Projects</h2>
+        <br>
+        <h3 class="subheading">Generative AI</h3>
         <div class="container">
             <div class="row">
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/llm.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Realtime Intelligent Web Search using GPT4</h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    Built a web application that allows a user to ask questions that depend on real time data, for example “What is the latest update regarding the change in OpenAI leadership” or “Who won the most recent F1 race in Las Vegas”.
+                                </li>
+                                <li>
+                                    The application uses websites on the internet to provide a concise answer with a few important bullet points. It also provides a link to the source websites.
+                                </li>
+                                <li>
+                                    Tools used: GPT-4 Turbo , BeautifulSoup, Streamlit.
+                                </li>
+                                <li>
+                                    Github Link: <a href="https://github.com/rahulkuriyedath/LLM-Powered-WebSearch">https://github.com/rahulkuriyedath/LLM-Powered-WebSearch</a>
+                                </li>
+                            </ul>
+                        </p>
+                        
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/RAG.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Retrieval Augmented Generation (RAG) based Question Answering system</h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    QA system with a streamlit UI that uses OpenAI embeddings and generative LLM for closed-domain question answering. 
+                                </li>
+                                <li>
+                                    Allows users to ask natural language questions on their own PDFs, txt files and csvs. Tools used include langchain, FAISS (for vector store and semantic search) and OpenAI LLM.
+                                </li>
+                            </ul>
+                        </p>
+                        
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <br>
+                <h3 class="subheading">NLP</h3>
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/rec system.png" />
@@ -233,21 +298,91 @@ Web Services (AWS). Services used include EC2, ECS, DynamoDB, Fargate, OpenSearc
                         <p>
                             <ul>
                                 <li>
-                                    Ongoing project
+                                    Developed a recommender system for a news aggregator tech startup that aggregates news articles for its users based on their usage history and content similarity.
                                 </li>
                                 <li>
-                                    Developing a recommender system for a news aggregator company that will 
-                                    provide relevant news articles to its users based on their usage history.
-                                </li>
-                                <li>
-                                    Using NLP techniques for document similarity and information retrieval tasks.
-                                </li>
-                                <li>
-                                    Tools and libraries used: Python, Sentence-transformer, SpaCy, Pandas, SciPy
+                                    Implemented document similarity and information retrieval using BERT , Spacy, Pandas and Transformers.
                                 </li>
                             </ul>
                         </p>
                         
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/resume_parse.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Automated Resume Parser using Transformers</h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    Trained a transformer model to automatically detect key information from resumes, allowing recruiters to easily filter candidates who are appropriate for the job.
+                                <li>
+                                    Used spacy 3.0 to run supervised training and deployed the trained model on AWS. Tools used: python, spacy, AWS, Huggingface.
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/movierec.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Movie Recommendation System </h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    Created a recommender system capable of providing movies recommendation 
+                                    that users may like based on past movie ratings provided by them.
+                                <li>
+                                    Implemented both collaborative and content-based filtering techniques.
+                                </li>
+                                <li>
+                                    Used the MovieLens dataset and the Surprise and TrucatedSVD packages to 
+                                    build the recommendation system.
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <br>
+                <h3 class="subheading">Computer Vision</h3>
+                
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/facerec.png"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>FaceRec - Detect & identify faces in video streams</h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    Tool that recognizes faces in video streams. An application of this code could be in security cameras; the code could identify people as belonging to predefined a "red-list" or "green-list".
+                                </li>
+                                <li>
+                                    Tools used: Python, OpenCV, face_recognition (python module)
+                                </li>
+                                <li>
+                                    Used PyTorch to create a CNN that performed OCR and recognize the digits in the image.
+                                </li> 
+                            </ul>
+                        </p>
+                        <a href="https://github.com/rahulkuriyedath/FaceRec">View Project on Github</a>
+                  
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -273,6 +408,7 @@ Web Services (AWS). Services used include EC2, ECS, DynamoDB, Fargate, OpenSearc
                                 </li> 
                             </ul>
                         </p>
+                        <a href="https://github.com/rahulkuriyedath/Sudoku">View Project on Github</a>
                   
                     </div>
                     <!-- End .project-info -->
@@ -307,24 +443,27 @@ Web Services (AWS). Services used include EC2, ECS, DynamoDB, Fargate, OpenSearc
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+                
+                <br>
+                <h3 class="subheading">Data Analytics</h3>
+
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/movierec.png" />
+                        <img src="images/tableau.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Movie Recommendation System </h3>
+                        <h3>Airbnb Pricing Trends Visualization</h3>
                         <p>
                             <ul>
                                 <li>
-                                    Created a recommender system capable of providing movies recommendation 
-                                    that users may like based on past movie ratings provided by them.
-                                <li>
-                                    Implemented both collaborative and content-based filtering techniques.
+                                    Data visualization solution using Python and Tableau, enabling comprehensive analysis of Airbnb listing prices in Seattle, facilitating informed decision-making for property investments.
                                 </li>
                                 <li>
-                                    Used the MovieLens dataset and the Surprise and TrucatedSVD packages to 
-                                    build the recommendation system.
+                                    Provided actionable insights including high-demand areas, optimal property types for maximum ROI, peak occupancy periods, and optimal nightly rates.
+                                </li>
+                                <li>
+                                    Credits: This project was inspired by <a href="https://www.youtube.com/@AlexTheAnalyst">Alex Freberg's</a> YouTube tutorials for Tableau. 
                                 </li>
                             </ul>
                         </p>
@@ -332,7 +471,7 @@ Web Services (AWS). Services used include EC2, ECS, DynamoDB, Fargate, OpenSearc
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
-                
+
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/moveymoney.jpg" />
@@ -351,9 +490,6 @@ Web Services (AWS). Services used include EC2, ECS, DynamoDB, Fargate, OpenSearc
                                 <li>
                                     Application deployed online using Heroku.
                                 </li>
-                                <li>
-                                    Check out the <a href="https://moveymoney.herokuapp.com/">dashboard</a>
-                                </li>
                             </ul>
                         </p>
                         <a href="https://github.com/UBC-MDS/532-group11">View Project on Github</a>
@@ -361,6 +497,7 @@ Web Services (AWS). Services used include EC2, ECS, DynamoDB, Fargate, OpenSearc
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/eda.jpg" />
